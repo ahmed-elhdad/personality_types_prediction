@@ -139,7 +139,7 @@ This project uses the following Python libraries:
 - **Joblib**: Model serialization and loading
 
 ## App Screenshot
-![App Screenshot](<img width="1046" height="769" alt="Screenshot 2026-03-22 151733" src="https://github.com/user-attachments/assets/6a4e19a8-1678-47e6-9868-5ce75c8752dc" />
+![App Screenshot(<img width="1046" height="769" alt="Screenshot 2026-03-22 151733" src="https://github.com/user-attachments/assets/64a07b48-8352-474c-923a-21480c177027" />
 )
 
 ## License
