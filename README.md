@@ -16,7 +16,7 @@ A machine learning project that predicts Myers-Briggs Type Indicator (MBTI) pers
 - [License](#license)
 
 ## Description
-This project aims to classify personality types into one of the 16 MBTI types based on textual data. The model is trained on cleaned text posts and uses features like word count and text length along with TF-IDF vectorization of the text content.
+This project aims to classify personality types into one of the 16 MBTI types using text data. The model is trained on cleaned text posts and uses features like word count and text length, along with TF-IDF vectorization of the text content.
 
 The MBTI types are combinations of four dichotomies:
 - Introversion (I) vs Extroversion (E)
@@ -90,7 +90,7 @@ personality_types_prediction/
 ### File Descriptions
 - **`src/clean_data.py`**: 
   - Loads raw data from `data/personality_types.csv`
-  - Cleans text by removing URLs, punctuation, digits, and converting to lowercase
+  - Cleans text by removing URLs, punctuation, digits and converting to lowercase
   - Splits text on delimiters and joins back
   - Creates features: `words_count` (number of words), `text_length` (character count)
   - Saves cleaned data to `data/cleaned_data.csv`
@@ -103,19 +103,19 @@ personality_types_prediction/
   - Text features: TF-IDF vectorizer (ngrams 1-2, stop words, min_df=5, max_df=0.8, max_features=10000)
   - Logistic Regression with class balancing
   - Performs GridSearchCV on hyperparameters (max_features, ngram_range, C)
-  - Evaluates with classification report, confusion matrix, and accuracy
+  - Evaluates with a classification report, confusion matrix, and accuracy
   - Saves the best model to `src/logistic_regression_pipline.pkl`
 
 - **`src/main.py`**:
   - Loads the trained model
-  - Creates a Streamlit interface with title and text area
+  - Creates a Streamlit interface with a title and a text area
   - On button click, creates a DataFrame with input text, word count, and text length
   - Predicts the personality type and displays it
   - Shows the key for MBTI letters
 
 ## Data Analysis and Model
 - **Dataset**: Contains text posts labeled with MBTI personality types
-- **Preprocessing**: Text cleaning removes noise, feature engineering adds numeric features
+- **Preprocessing**: Text cleaning removes noise, and feature engineering adds numeric features
 - **Model**: Logistic Regression in a scikit-learn pipeline
 - **Hyperparameter Tuning**: Grid search on TF-IDF max_features and regularization parameter C
 - **Evaluation**: F1-weighted score, classification report, confusion matrix
@@ -139,10 +139,8 @@ This project uses the following Python libraries:
 - **Joblib**: Model serialization and loading
 
 ## App Screenshot
-![App Screenshot](images/app_screenshot.png)
-
-## Contributing
-Contributions are welcome! Please fork the repository and submit a pull request.
+![App Screenshot](<img width="1046" height="769" alt="Screenshot 2026-03-22 151733" src="https://github.com/user-attachments/assets/6a4e19a8-1678-47e6-9868-5ce75c8752dc" />
+)
 
 ## License
 This project is licensed under the MIT License.</content>
